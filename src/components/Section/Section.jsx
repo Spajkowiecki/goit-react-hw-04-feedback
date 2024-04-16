@@ -8,6 +8,3 @@ export default function Section({ title, children }) {
     </div>
   );
 }
-// Section.propTypes = {
-//   title: PropTypes.string,
-// };

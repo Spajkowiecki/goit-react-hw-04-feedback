@@ -17,17 +17,9 @@ export default function Statistics({ stats, total, positiveFeedback }) {
       </li>
       <li>
         <p>
-          positive: <strong>{positiveFeedback}</strong>
+          positive: <strong>{positiveFeedback}%</strong>
         </p>
       </li>
     </ul>
   );
 }
-
-// Statistics.propTypes = {
-//   good: PropTypes.number.isRequired,
-//   neutral: PropTypes.number.isRequired,
-//   bad: PropTypes.number.isRequired,
-//   total: PropTypes.number.isRequired,
-//   positivePercentage: PropTypes.number.isRequired,
-// };

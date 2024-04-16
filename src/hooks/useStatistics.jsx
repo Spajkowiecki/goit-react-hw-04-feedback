@@ -8,7 +8,7 @@ const useStatistics = data => {
     const sum = Object.values(data).reduce((acc, curr) => acc + curr);
     const positivePercentage = Math.floor((data.good / total) * 100);
     setTotal(sum);
-    setPositive(positivePercentage);
+    setPositive(positivePercentage.toFixed(0));
   }, [data, positive, total]);
 
   return { positive, total };
