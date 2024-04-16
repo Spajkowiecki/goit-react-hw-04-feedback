@@ -1,9 +1,9 @@
 {
-  "name": "goit-react-hw-02-feedback",
+  "name": "goit-react-hw-04-feedback",
   "author": "Patryk Karolczak",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://spajkowiecki.github.io/goit-react-hw-02-feedback/",
+  "homepage": "https://spajkowiecki.github.io/goit-react-hw-04-feedback/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
@@ -39,5 +39,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "Acest proiect a fost creat cu ajutorul\r [Create React App](https://github.com/facebook/create-react-app). Pentru prezentări\r și configurarea de funcții suplimentare\r [consultă documentația](https://facebook.github.io/create-react-app/docs/getting-started).",
+  "main": "index.js",
+  "keywords": [],
+  "license": "ISC"
 }
