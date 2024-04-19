@@ -1,16 +1,20 @@
-const { useEffect, useState } = require('react');
+import PropTypes from 'prop-types';
 
-const useStatistics = data => {
-  const [total, setTotal] = useState(0);
-  const [positive, setPositive] = useState(0);
+function useStatistics(data) {
+  const total = data.good + data.neutral + data.bad;
 
-  useEffect(() => {
-    const sum = Object.values(data).reduce((acc, curr) => acc + curr);
-    const positivePercentage = Math.floor((data.good / total) * 100);
-    setTotal(sum);
-    setPositive(positivePercentage.toFixed(0));
-  }, [data, positive, total]);
+  const sum = Object.values(data).reduce((acc, curr) => acc + curr);
+  const positivePercentage = Math.floor((data.good / total) * 100);
 
-  return { positive, total };
-};
+  return { positive: positivePercentage, total: sum };
+}
+
+// useStatistics.propTypes = {
+//   data: PropTypes.object({
+//     good: PropTypes.number,
+//     neutral: PropTypes.number,
+//     bad: PropTypes.number,
+//   }),
+// };
+
 export default useStatistics;

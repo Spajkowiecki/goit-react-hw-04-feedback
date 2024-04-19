@@ -5,6 +5,7 @@ import styles from './App.module.css';
 import useFeedback from 'hooks/useFeedback';
 import Notification from './Notification/Notification';
 import useStatistics from 'hooks/useStatistics';
+import PropTypes from 'prop-types';
 
 export default function App() {
   const { feedback, updateFeedback } = useFeedback();
@@ -29,3 +30,13 @@ export default function App() {
     </div>
   );
 }
+
+// App.propTypes = {
+//   feedback: PropTypes.object({
+//     good: PropTypes.number,
+//     neutral: PropTypes.number,
+//     bad: PropTypes.number,
+//   }),
+//   positive: PropTypes.number,
+//   total: PropTypes.number,
+// };

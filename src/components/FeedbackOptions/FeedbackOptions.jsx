@@ -1,4 +1,5 @@
 import styles from './FeedbackOptions.module.css';
+import PropTypes from 'prop-types';
 
 export default function FeedbackOptions({ options, click }) {
   return (
@@ -11,3 +12,11 @@ export default function FeedbackOptions({ options, click }) {
     </ul>
   );
 }
+
+// FeedbackOptions.propTypes = {
+//   options: PropTypes.object({
+//     good: PropTypes.number,
+//     neutral: PropTypes.number,
+//     bad: PropTypes.number,
+//   }),
+// };

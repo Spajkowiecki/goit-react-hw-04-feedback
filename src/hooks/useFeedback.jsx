@@ -1,6 +1,6 @@
 import { useState } from 'react';
-
-const useFeedback = () => {
+import PropTypes from 'prop-types';
+function useFeedback() {
   const [feedback, setFeedback] = useState({
     good: 0,
     neutral: 0,
@@ -18,6 +18,13 @@ const useFeedback = () => {
   };
 
   return { feedback, setFeedback, updateFeedback };
-};
+}
 
+// useFeedback.propTypes = {
+//   feedback: PropTypes.object({
+//     good: PropTypes.number,
+//     neutral: PropTypes.number,
+//     bad: PropTypes.number,
+//   }),
+// };
 export default useFeedback;

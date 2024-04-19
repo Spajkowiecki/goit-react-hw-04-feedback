@@ -1,5 +1,5 @@
 import styles from './Statistics.module.css';
-
+import PropTypes from 'prop-types';
 export default function Statistics({ stats, total, positiveFeedback }) {
   return (
     <ul className={styles.stat}>
@@ -23,3 +23,13 @@ export default function Statistics({ stats, total, positiveFeedback }) {
     </ul>
   );
 }
+
+// Statistics.propTypes = {
+//   stats: PropTypes.object({
+//     good: PropTypes.string,
+//     neutral: PropTypes.string,
+//     bad: PropTypes.string,
+//   }),
+//   total: PropTypes.number,
+//   positiveFeedback: PropTypes.number,
+// };
