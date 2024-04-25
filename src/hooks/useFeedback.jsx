@@ -7,6 +7,7 @@ function useFeedback() {
     bad: 0,
   });
 
+  //function to hanlde button press
   const updateFeedback = event => {
     const update = event.currentTarget.textContent;
     setFeedback(prev => {
