@@ -9,12 +9,8 @@ function useStatistics(data) {
   return { positive: positivePercentage, total: sum };
 }
 
-// useStatistics.propTypes = {
-//   data: PropTypes.object({
-//     good: PropTypes.number,
-//     neutral: PropTypes.number,
-//     bad: PropTypes.number,
-//   }),
-// };
+useStatistics.propTypes = {
+  data: PropTypes.object.isRequired,
+};
 
 export default useStatistics;

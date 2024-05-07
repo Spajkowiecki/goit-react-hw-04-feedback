@@ -24,12 +24,8 @@ export default function Statistics({ stats, total, positiveFeedback }) {
   );
 }
 
-// Statistics.propTypes = {
-//   stats: PropTypes.object({
-//     good: PropTypes.string,
-//     neutral: PropTypes.string,
-//     bad: PropTypes.string,
-//   }),
-//   total: PropTypes.number,
-//   positiveFeedback: PropTypes.number,
-// };
+Statistics.propTypes = {
+  stats: PropTypes.object.isRequired,
+  total: PropTypes.number.isRequired,
+  positiveFeedback: PropTypes.number.isRequired,
+};

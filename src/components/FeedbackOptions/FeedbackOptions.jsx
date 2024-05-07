@@ -13,10 +13,7 @@ export default function FeedbackOptions({ options, click }) {
   );
 }
 
-// FeedbackOptions.propTypes = {
-//   options: PropTypes.object({
-//     good: PropTypes.number,
-//     neutral: PropTypes.number,
-//     bad: PropTypes.number,
-//   }),
-// };
+FeedbackOptions.propTypes = {
+  options: PropTypes.object,
+  click: PropTypes.func,
+};

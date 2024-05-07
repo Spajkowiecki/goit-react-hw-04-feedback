@@ -21,11 +21,4 @@ function useFeedback() {
   return { feedback, setFeedback, updateFeedback };
 }
 
-// useFeedback.propTypes = {
-//   feedback: PropTypes.object({
-//     good: PropTypes.number,
-//     neutral: PropTypes.number,
-//     bad: PropTypes.number,
-//   }),
-// };
 export default useFeedback;
