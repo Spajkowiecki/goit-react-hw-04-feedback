@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import PropTypes from 'prop-types';
 function useFeedback() {
   const [feedback, setFeedback] = useState({
     good: 0,
